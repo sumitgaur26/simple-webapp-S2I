@@ -28,5 +28,10 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt
+    pip install flask-mysql
   displayName: 'Install dependencies fast'
+  
+- script: python webabb start
+  FLASK_APP=app.py flask run --host=0.0.0.0
+  displayName: 'Starting Webapp'
 
