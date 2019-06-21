@@ -31,9 +31,4 @@ steps:
     pip install flask-mysql
   displayName: 'Install dependencies fast'
 
-# Set variables once
-variables:
-  configuration: debug
-  platform: x64
-steps:
-  - bash: FLASK_APP=app.py flask run --host=0.0.0.0
+- bash: FLASK_APP=app.py flask run --host=0.0.0.0
