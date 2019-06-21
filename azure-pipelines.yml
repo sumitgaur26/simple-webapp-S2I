@@ -35,5 +35,5 @@ steps:
 variables:
   configuration: debug
   platform: x64
-- script: |
-  app.py flask run --host=0.0.0.0
+steps:
+  - bash: FLASK_APP=app.py flask run --host=0.0.0.0
