@@ -30,3 +30,5 @@ steps:
     pip install -r requirements.txt
     pip install flask-mysql
   displayName: 'Install dependencies fast'
+  
+- task: PublishBuildArtifacts@1
